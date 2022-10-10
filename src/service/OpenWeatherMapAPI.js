@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 let URL = 'https://api.openweathermap.org/data/2.5/weather?'
-const keyAPI = '6eb7687dd8909286c64d7d07980d7b36'
+const keyAPI = ''
 
 
 
@@ -16,7 +16,7 @@ const keyAPI = '6eb7687dd8909286c64d7d07980d7b36'
          *    
          */
  export function returnURL(lat, lon) {
-  return (URL+'lat='+lat+'&lon='+lon+'&appid='+keyAPI)
+  return (URL+'lat='+lat+'&lon='+lon+'&appid='+keyAPI+'&units=metric')
 
 }
 

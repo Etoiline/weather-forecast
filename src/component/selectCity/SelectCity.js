@@ -1,4 +1,5 @@
-import { useOpenWeatherMapAPI } from "../service/OpenWeatherMapAPI"
+import { useOpenWeatherMapAPI } from "../../service/OpenWeatherMapAPI"
+import WeatherOverview from "../weatherOverview/WeatherOverview"
 
 function SelectCity() {
   const {loading, data, error} = useOpenWeatherMapAPI()
@@ -7,6 +8,11 @@ function SelectCity() {
     if(error){
       console.log(error)
     return 0
+    }
+    else {
+      return (
+      <WeatherOverview data={data} />
+      )
     }
   }
   console.log('data', data)

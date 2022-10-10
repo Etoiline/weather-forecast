@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import SelectCity from './component/SelectCity';
+import SelectCity from './component/selectCity/SelectCity';
 
 function App() {
   return (
