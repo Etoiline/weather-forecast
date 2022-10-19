@@ -1,4 +1,29 @@
 .main {
   background-color: cadetblue;
-  width:50%;
+  width:30%;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconTemp {
+  display: flex;
+  align-items: center;
+  width: auto;
+  align-self: center;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.description {
+  width: auto;
+  align-self: center;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.humidityWind {
+  display: flex;
+  width: auto;
+  margin-top: 20px;
 }

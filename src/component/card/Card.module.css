@@ -1,0 +1,23 @@
+
+.unselected {
+  text-align: center;
+}
+
+.selected {
+  background-color: #5596f6;
+  text-align: center;
+  color:white;
+  border-radius: 8px;
+}
+
+.unselected>p .selected>p {
+  margin:0px;
+}
+
+.unselected img{
+  margin:-20px;
+}
+
+.selected img {
+  margin:-20px;
+}

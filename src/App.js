@@ -1,10 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
+import app from './App.module.css';
 import SelectCity from './component/selectCity/SelectCity';
 
 function App() {
   return (
-    <div>
+    <div className={app.main}>
       <SelectCity />
     </div>
   );
