@@ -10,7 +10,7 @@ function ChartDesign(props) {
   Math.round(props.data.list[16].main.temp), 
   Math.round(props.data.list[24].main.temp)]
 
-console.log('chart', props.selected)
+//console.log('chart', props.selected)
   useEffect(() => {
     if (props.data.cod) {
       createChart()
@@ -79,7 +79,7 @@ var curveFunc = d3.area()
 
     // Add the dot and info
       let temperatureDay = temperature[selected+1] //+1 parce que j'ai rajouté une valeur en amont pour la continuité du graphique
-      console.log('temperatureD', temperature,temperatureDay)
+      //console.log('temperatureD', temperature,temperatureDay)
 
       let temperaturePoint = chart.append("g")
       temperaturePoint.append("svg:text") //texte : temperature du jour
